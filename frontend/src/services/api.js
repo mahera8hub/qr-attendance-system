@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 // Set base URL for API requests
-axios.defaults.baseURL = 'http://localhost:5000';
+axios.defaults.baseURL = process.env.REACT_APP_API_URL || 'http://localhost:5000';
 
 // Add token to requests if available
 const token = localStorage.getItem('token');
