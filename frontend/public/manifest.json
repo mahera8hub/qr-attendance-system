@@ -1,0 +1,9 @@
+{
+  "short_name": "QR Attendance",
+  "name": "QR-based Attendance System",
+  "icons": [],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}
