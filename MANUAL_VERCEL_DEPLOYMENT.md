@@ -20,7 +20,8 @@ Since we encountered issues with the Vercel CLI, this guide will walk you throug
 5. Get your connection string:
    - Click "Connect" on your cluster
    - Choose "Connect your application"
-   - Copy the connection string and replace `<password>` with your database user's password
+   - Use this connection string: `mongodb+srv://dbmuser:<db_password>@cluster0.dyzsjxh.mongodb.net/attendance-system?retryWrites=true&w=majority&appName=Cluster0`
+   - Replace `<db_password>` with your database user's password
 
 ## Step 2: Deploy the Backend to Vercel
 
@@ -34,7 +35,7 @@ Since we encountered issues with the Vercel CLI, this guide will walk you throug
    - Output Directory: Leave empty
    - Install Command: `npm install`
 5. Click "Environment Variables" and add:
-   - `MONGO_URI`: Your MongoDB Atlas connection string from Step 1
+   - `MONGO_URI`: `mongodb+srv://dbmuser:<db_password>@cluster0.dyzsjxh.mongodb.net/attendance-system?retryWrites=true&w=majority&appName=Cluster0` (replace `<db_password>` with your actual password)
    - `JWT_SECRET`: A secure random string for JWT token generation
    - `NODE_ENV`: Set to `production`
 6. Click "Deploy"
